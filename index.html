@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ Powell — $DJPOWELL</title>
+  <meta name="description" content="DJ Powell ($DJPOWELL) — the degen soundtrack of rate cuts. Live on Bonk on Solana.">
+  <meta property="og:title" content="DJ Powell — $DJPOWELL">
+  <meta property="og:description" content="Degen soundtrack of rate cuts. Contract: DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ff6a1a">
+  <link rel="preload" href="assets/djpowell-bg.mp4" as="video" type="video/mp4">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background video -->
+  <video id="bg-video" class="bg-video" autoplay loop muted playsinline poster="" preload="auto">
+    <source src="assets/djpowell-bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Top nav -->
+  <header class="nav">
+    <div class="brand glitch" data-text="DJ POWELL">DJ POWELL</div>
+    <nav>
+      <button class="btn secondary sound-toggle" id="sound-toggle" aria-label="Toggle sound">🔊 Sound</button>
+      <a href="#about">About</a>
+      <a href="#contract">Contract</a>
+      <a href="#howto">How to Buy</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <div class="ticker">$DJPOWELL</div>
+    <h1 class="headline glitch" data-text="CUT RATES. PUMP VIBES.">CUT RATES. PUMP VIBES.</h1>
+    <p class="sub">The chair just dropped the bassline. Live on <span class="pill">BONK · Solana</span>.</p>
+
+    <div class="cta-row">
+      <a class="btn primary" href="#" target="_blank" rel="noopener">Trade</a>
+      <button class="btn secondary" id="copy-addr" data-addr="DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk">Copy Contract</button>
+      <a class="btn ghost" href="#howto">How to Buy</a>
+    </div>
+
+    <div class="contract" id="contract">
+      <code>DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk</code>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track" id="marquee-track">
+        <span>DJ POWELL • $DJPOWELL • BONK • SOLANA • RATE CUTS • PUMP IT • WAGMI • </span>
+        <span>DJ POWELL • $DJPOWELL • BONK • SOLANA • RATE CUTS • PUMP IT • WAGMI • </span>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="panel">
+    <h2>About</h2>
+    <ul class="bullets">
+      <li><b>Ticker:</b> $DJPOWELL</li>
+      <li><b>Chain:</b> Solana</li>
+      <li><b>Platform:</b> Bonk</li>
+      <li><b>Contract:</b> <span class="mono">DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk</span></li>
+    </ul>
+  </section>
+
+  <!-- How to Buy -->
+  <section id="howto" class="panel">
+    <h2>How to Buy</h2>
+
+    <!-- Quick copy -->
+    <div class="copybox">
+      <input id="contract-input" type="text" readonly value="DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk" />
+      <button class="btn secondary" id="copy-addr-2" data-addr="DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk">Copy</button>
+    </div>
+
+    <div class="buy-grid">
+      <div class="card">
+        <h3>Route A — DEX (Raydium/Jupiter)</h3>
+        <ol class="steps">
+          <li>Install a Solana wallet (<span class="kbd">Phantom</span>/<span class="kbd">Backpack</span>) and back up your seed.</li>
+          <li>Buy or transfer <b>SOL</b> to that wallet.</li>
+          <li>Open a DEX (Raydium/Jupiter), select <b>SOL → $DJPOWELL</b>.</li>
+          <li>Paste the contract address above and confirm it matches.</li>
+          <li>Set slippage if needed (start <b>1–3%</b>). Swap.</li>
+        </ol>
+        <div class="cta-row">
+          <a class="btn ghost" href="https://jup.ag/swap?sell=USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB&buy=DFpdxWL7xqKer854mjARmersmivh5FyGe1nJEPdsbonk" target="_blank" rel="noopener">Swap on Jupiter</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Route B — Bonk bot</h3>
+        <ol class="steps">
+          <li>Open your preferred Bonk trading bot (Telegram or web).</li>
+          <li>Connect wallet or deposit SOL to the bot.</li>
+          <li>Paste the contract and select <b>Buy</b>.</li>
+          <li>Set amount and confirm. Withdraw tokens back to your wallet if required.</li>
+        </ol>
+      </div>
+    </div>
+
+    <ul class="bullets" style="max-width:900px;margin-top:16px">
+      <li><b>Verify:</b> Double-check the last 6 chars of the contract match before swapping.</li>
+      <li><b>Start small:</b> Test with a tiny buy, then size up.</li>
+      <li><b>Slippage:</b> Thin liquidity can require higher slippage. Nudge slowly.</li>
+      <li><b>Imposters:</b> Only use the address shown here.</li>
+    </ul>
+
+    <p class="disclaimer">Nothing here is financial advice. Meme responsibly.</p>
+  </section>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> DJ Powell</div>
+    <div class="socials">
+      <a href="https://x.com/i/communities/1968593673223807031" target="_blank" rel="noopener">X</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
